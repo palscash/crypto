@@ -14,6 +14,14 @@
 		<url>http://palscash.org</url>
 	</organization>
 
+	<developers>
+		<developer>
+			<id>PalsCash</id>
+			<email>dev@palscash.org</email>
+			<name>PalsCash Dev</name>
+		</developer>
+	</developers>
+
 	<licenses>
 		<license>
 			<name>MIT License</name>
