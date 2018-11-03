@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.palscash.common.crypto;
+package org.palscash.common.crypto;
 
 import java.math.BigInteger;
 import java.util.Arrays;

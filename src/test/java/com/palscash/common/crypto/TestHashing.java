@@ -2,6 +2,9 @@ package com.palscash.common.crypto;
 
 import java.math.BigInteger;
 
+import org.palscash.common.crypto.Base58;
+import org.palscash.common.crypto.Hashing;
+
 import junit.framework.TestCase;
 
 public class TestHashing extends TestCase {

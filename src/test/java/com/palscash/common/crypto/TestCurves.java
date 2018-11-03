@@ -1,5 +1,7 @@
 package com.palscash.common.crypto;
 
+import org.palscash.common.crypto.Curves;
+
 import junit.framework.TestCase;
 
 public class TestCurves extends TestCase {

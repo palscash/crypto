@@ -4,9 +4,10 @@ import java.math.BigInteger;
 import java.util.Arrays;
 import java.util.List;
 
-import com.palscash.common.crypto.Curves;
-import com.palscash.common.crypto.PalsCashKeyPair;
-import com.palscash.common.crypto.mnemonics.Mnemonics.Language;
+import org.palscash.common.crypto.Curves;
+import org.palscash.common.crypto.PalsCashKeyPair;
+import org.palscash.common.crypto.mnemonics.Mnemonics;
+import org.palscash.common.crypto.mnemonics.Mnemonics.Language;
 
 import junit.framework.TestCase;
 

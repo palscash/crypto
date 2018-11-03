@@ -4,6 +4,7 @@ import java.math.BigInteger;
 import java.nio.charset.StandardCharsets;
 
 import org.bouncycastle.util.Arrays;
+import org.palscash.common.crypto.Base58;
 
 import junit.framework.TestCase;
 

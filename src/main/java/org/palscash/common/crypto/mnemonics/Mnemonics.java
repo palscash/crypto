@@ -23,7 +23,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
-package com.palscash.common.crypto.mnemonics;
+package org.palscash.common.crypto.mnemonics;
 
 import java.math.BigInteger;
 import java.nio.charset.StandardCharsets;
@@ -36,11 +36,10 @@ import java.util.Map;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.StringUtils;
+import org.palscash.common.crypto.Base58;
+import org.palscash.common.crypto.Keys;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import com.palscash.common.crypto.Base58;
-import com.palscash.common.crypto.Keys;
 
 /**
  * Based on https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki

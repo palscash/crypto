@@ -2,6 +2,10 @@ package com.palscash.common.crypto;
 
 import java.nio.charset.StandardCharsets;
 
+import org.palscash.common.crypto.Base58;
+import org.palscash.common.crypto.PalsCashKeyPair;
+import org.palscash.common.crypto.Signing;
+
 import junit.framework.TestCase;
 
 public class TestKeyPair extends TestCase {
