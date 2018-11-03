@@ -4,7 +4,7 @@
 
 	<groupId>org.palscash</groupId>
 	<artifactId>org.palscash.common.crypto</artifactId>
-	<version>2.6-SNAPSHOT</version>
+	<version>2.6</version>
 
 	<name>PalsCash Crypto</name>
 	<url>http://palscash.org</url>
@@ -54,7 +54,7 @@
 		<connection>scm:git:git://github.com/palscash/core.git</connection>
 		<developerConnection>scm:git:git@github.com:palscash/core.git</developerConnection>
 		<url>https://github.com/palscash/core/tree/master/com.palscash.common.crypto</url>
-		<tag>HEAD</tag>
+		<tag>org.palscash.common.crypto-2.6</tag>
 	</scm>
 
 	<build>
