@@ -1,10 +1,28 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.palscash</groupId>
 	<artifactId>org.palscash.common.crypto</artifactId>
 	<version>2.5-SNAPSHOT</version>
+
+	<name>PalsCash Crypto</name>
+	<url>http://palscash.org</url>
+	<description>PalsCash Crypto Utilities (Java)</description>
+	<organization>
+		<name>PalsCash Team</name>
+		<url>http://palscash.org</url>
+	</organization>
+
+	<licenses>
+		<license>
+			<name>MIT License</name>
+			<url>https://opensource.org/licenses/MIT</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
 
 	<distributionManagement>
 		<snapshotRepository>
@@ -24,7 +42,7 @@
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
-	
+
 
 	<scm>
 		<connection>scm:git:git://github.com/palscash/core.git</connection>
@@ -196,4 +214,5 @@
 			</build>
 		</profile>
 	</profiles>
+
 </project>
