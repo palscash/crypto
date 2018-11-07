@@ -3,6 +3,7 @@
 This project contains a set of Java classes from the core of [PalsCash](https://palscash.org) project.
 This includes hashing functions, creating of private/public keys and public account addresses for network.
 
+![Build status](https://travis-ci.org/palscash/crypto.svg?branch=master)
 
 ## How to use
 
