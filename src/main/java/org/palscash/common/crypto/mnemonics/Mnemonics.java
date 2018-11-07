@@ -90,8 +90,7 @@ public class Mnemonics {
 			 * ), StandardCharsets.UTF_8));
 			 */
 		} catch (Exception e) {
-			// log.error("Error: ", e);
-			e.printStackTrace();
+			log.error("Error: ", e);
 		}
 	}
 

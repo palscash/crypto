@@ -83,7 +83,7 @@ public class Keys {
 			return privKey.getD();
 
 		} catch (Exception e) {
-			log.error("Error: ", e);
+			log.error("Error generating random private key: ", e);
 		}
 
 		return null;
@@ -129,7 +129,7 @@ public class Keys {
 			KeyFactory keyFactory = KeyFactory.getInstance(EC);
 			return keyFactory.generatePrivate(privateKeySpec);
 		} catch (NoSuchAlgorithmException | InvalidKeySpecException e) {
-			e.printStackTrace();
+			log.error("Error getting priv key from big int: ", e);
 			return null;
 		}
 	}

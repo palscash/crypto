@@ -31,12 +31,16 @@ import java.nio.charset.StandardCharsets;
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.math.NumberUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Utilities related to public account uuid
  */
 public class PalsCashAccountUuid {
 
+	private static final Logger log = LoggerFactory.getLogger(PalsCashAccountUuid.class);
+	
 	private static final String ZERO_REPLACEMENT_FOR_BASE58 = "x";
 
 	private static final String ZERO = "0";
@@ -64,7 +68,7 @@ public class PalsCashAccountUuid {
 		try {
 			this.publicKeyHash = Base58.decode(uuid.substring(6, uuid.length() - 2));
 		} catch (Exception e) {
-			e.printStackTrace();
+			log.error("Error: ", e);
 		}
 
 		String curv = uuid.substring(3, 6);
@@ -158,7 +162,7 @@ public class PalsCashAccountUuid {
 		try {
 			hash = Base58.decode(publicKeyHash);
 		} catch (Exception e) {
-			e.printStackTrace();
+			log.error("Error: ", e);
 			return false;
 		}
 
