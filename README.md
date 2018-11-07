@@ -4,7 +4,7 @@ This project contains a set of Java classes from the core of [PalsCash](https://
 This includes hashing functions, creating of private/public keys and public account addresses for network.
 
 
-##How to use##
+## How to use
 
 Include the following dependency into you *pom.xml* or clone the project from GitHub [https://github.com/palscash/crypto](https://github.com/palscash/crypto).
 
@@ -17,7 +17,7 @@ Include the following dependency into you *pom.xml* or clone the project from Gi
 
 ```
 
-###How to generate private/public key pair###
+### How to generate private/public key pair
 
 ```java
 PalsCashKeyPair kp = PalsCashKeyPair.createRandom(Curves.DEFAULT_CURVE);
@@ -38,7 +38,7 @@ PalsCash account address: pcax2739chVEikUr3Y7b9qs9RNmZenJFcQx3
 
 The generated **pcax2739chVEikUr3Y7b9qs9RNmZenJFcQx3** account address can be used immediately for network transfers.
 
-###How to generate a public address from a private key###
+### How to generate a public address from a private key
 
 ```java
 PalsCashKeyPair kp = PalsCashKeyPair.createFromPrivateKeyBase58("1EG9rcjgApVLidX3pzY4mFZqwLpJFYGahEujsjVZfAhqu",Curves.DEFAULT_CURVE);
@@ -54,7 +54,7 @@ PalsCash account address: pcax2739chVEikUr3Y7b9qs9RNmZenJFcQx3
 
 The generated **pcax2739chVEikUr3Y7b9qs9RNmZenJFcQx3** account address can be used immediately for network transfers.
 
-###How to validate PalsCash account address?###
+### How to validate PalsCash account address?
 
 ```java
 assertTrue(PalsCashAccountUuid.isValidAccountAddress("pcax27UKJ3YHEmX3od3cvqh4jP3P8AC2Q61"));
@@ -65,7 +65,7 @@ assertFalse(PalsCashAccountUuid.isValidAccountAddress("pcax27UKJ3YHEmX3od3cvqh4j
 assertFalse(PalsCashAccountUuid.isValidAccountAddress("pcaxxxUKJ3YHEmX3od3cvqh4jP3P8AC2Q6"));
 ```
 
-###How to generate list of mnemonics for an address?###
+### How to generate list of mnemonics for an address?
 
 ```java
 PalsCashKeyPair kp = PalsCashKeyPair.createRandom(Curves.DEFAULT_CURVE);
@@ -74,7 +74,7 @@ List<String> words1 = Mnemonics.generateWords(Language.ENGLISH, kp.getPrivateKey
 
 List will contain the following words: [beauty, shove, correct, thing, pottery, mimic, math, patch, gauge, clay, betray, soup, race, coffee, clutch, wasp, enforce, liar, elbow, theory, remain, violin, room, blame].
 
-###How to restore private key from mnemonics?###
+### How to restore private key from mnemonics?
 
 To restore the private key, pass the words back to *Mnemonics* class:
 
@@ -83,11 +83,11 @@ BigInteger privKey = Mnemonics.generatePrivateKeyFromWords(Language.ENGLISH, wor
 PalsCashKeyPair restoredKp = PalsCashKeyPair.createFromPrivateKeyBigInteger(privKey, Curves.DEFAULT_CURVE);
 ```
 
-###What is PalsCash's default elliptic curve?###
+### What is PalsCash's default elliptic curve?
 
 secp256k1
 
-###What elliptic curves are supported by PalsCash?###
+### What elliptic curves are supported by PalsCash?
 
 **001** c2pnb272w1
 
@@ -286,7 +286,7 @@ secp256k1
 See the [Account UUID](https://zdp-downloads.s3.amazonaws.com/account-id-cheatsheet.pdf) information on how the curve is defined by the account's address structure.
 
 
-##License##
+## License
 
 MIT License
 
