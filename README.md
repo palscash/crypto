@@ -5,6 +5,10 @@ This includes hashing functions, creating of private/public keys and public acco
 
 ![Build status](https://travis-ci.org/palscash/crypto.svg?branch=master)
 
+![Maven central](https://maven-badges.herokuapp.com/maven-central/org.palscash/org.palscash.common.crypto/badge.svg)
+
+
+
 ## How to use
 
 Include the following dependency into you *pom.xml* or clone the project from GitHub [https://github.com/palscash/crypto](https://github.com/palscash/crypto).
